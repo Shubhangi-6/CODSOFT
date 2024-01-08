@@ -30,6 +30,17 @@
 - **Model Evaluation - Random Forest Regressor:**
   - Applied a Random Forest Regressor and evaluated its performance on both training and testing data.
 
+- **Model Evaluation - DecisionTree Figure:**
+
+- **Structure:** The plot illustrates the hierarchical structure of the Decision Tree, with nodes representing decision points and branches indicating the possible outcomes based on features.
+
+- **Node Information:** Each node in the tree contains information such as the feature used for splitting, the threshold value, and the number of samples in that node.
+
+- **Color Coding:** Nodes are filled with colors representing the majority class in that region, aiding in quick interpretation.
+
+- **Class Labels:** The class_names parameter is set to ["Yes", "No"], indicating the predicted classes for the target variable.
+This visual representation helps in understanding how the Decision Tree partitions the feature space and makes predictions based on the specified conditions. It's a valuable tool for interpreting and communicating the decision-making process of the model.
+
 - **Hyperparameter Tuning:**
   - Conducted a hyperparameter search for the Decision Tree model using GridSearchCV.
   - Optimized hyperparameters for the Decision Tree model based on the best results from the search.
