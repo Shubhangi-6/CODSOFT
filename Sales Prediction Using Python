@@ -1,0 +1,40 @@
+
+- **Data Gathering:**
+  - Dataset obtained from a CSV file containing information about advertising expenditure and its impact on product sales.
+
+- **Exploratory Data Analysis (EDA):**
+  - Utilized Pandas for loading and exploring the dataset.
+  - Checked for data types, missing values, and descriptive statistics.
+  - Visualized data distribution and potential outliers using box plots.
+
+- **Feature Engineering:**
+  - Identified and handled outliers in the "Newspaper" column using the IQR method.
+  - Ensured data consistency by capping extreme values in the "Newspaper" column.
+
+- **Feature Selection:**
+  - Explored linear relationships between features using correlation analysis.
+  - Assessed multicollinearity using Variance Inflation Factor (VIF) to avoid issues in linear regression.
+
+- **Model Training:**
+  - Employed three different algorithms: Linear Regression, Decision Tree Regressor, and Random Forest Regressor.
+  - Split the dataset into training and testing sets using `train_test_split`.
+
+- **Model Evaluation - Linear Regression:**
+  - Assessed model performance using metrics such as Mean Squared Error (MSE), Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R2 Score.
+  - Checked residual normality through KDE and QQ plots and evaluated homoscedasticity using scatter plots.
+
+- **Model Evaluation - Decision Tree Regressor:**
+  - Conducted training and testing data evaluation using similar metrics.
+  - Examined the impact of the Decision Tree model on the dataset.
+
+- **Model Evaluation - Random Forest Regressor:**
+  - Applied a Random Forest Regressor and evaluated its performance on both training and testing data.
+
+- **Hyperparameter Tuning:**
+  - Conducted a hyperparameter search for the Decision Tree model using GridSearchCV.
+  - Optimized hyperparameters for the Decision Tree model based on the best results from the search.
+
+- **Final Model Evaluation:**
+  - Evaluated the tuned Decision Tree model on both training and testing datasets.
+  - Assessed performance using key metrics such as MSE, MAE, RMSE, and R2 Score.
+
