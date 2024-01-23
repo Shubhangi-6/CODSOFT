@@ -1,0 +1,82 @@
+
+
+- **Data Gathering:**
+  - Utilized Pandas to read a credit card dataset from a CSV file.
+  
+- **Exploratory Data Analysis (EDA):**
+  - Examined the dataset using various Pandas and Seaborn functions to gain insights.
+  - Checked for data types, missing values, and descriptive statistics.
+  - Investigated potential outliers using boxplots and identified their counts in each feature.
+  
+- **Feature Engineering:**
+  - Defined a function to handle outliers by replacing extreme values with upper and lower thresholds.
+  - Applied the outlier-handling function to specific features (V1-V28, Amount).
+  - Visualized the impact of outlier handling on a selected feature using a boxplot.
+
+- **Feature Selection:**
+  - Balanced the dataset by undersampling non-fraudulent transactions to match the number of fraudulent transactions.
+  - Plotted a countplot to visualize the balance in the target variable (Class).
+  
+- **Linearity and Correlation:**
+  - Computed the correlation matrix to understand linear relationships between features.
+  - Created a heatmap to visualize the correlation matrix for feature selection.
+
+- **Standardization:**
+  - Utilized StandardScaler from scikit-learn to standardize the feature values.
+  - Transformed the dataset with standardized values.
+
+- **Model Training:**
+  - Split the dataset into training and testing sets using train_test_split.
+  - Applied Logistic Regression from scikit-learn for binary classification.
+  - Trained the model on the training set and evaluated its performance.
+
+- **Model Evaluation - Training Data:**
+  - Calculated accuracy, confusion matrix, and classification report on the training set.
+  - Visualized the confusion matrix using a heatmap.
+
+- **Model Evaluation - Testing Data:**
+  - Applied the trained model to the testing set.
+  - Calculated accuracy, confusion matrix, and classification report on the testing set.
+
+- **Confusion Matrix Visualization:**
+  - Plotted a heatmap of the confusion matrix for both training and testing data.
+
+-This machine learning model is designed to detect credit card fraud by analyzing features such as V1-V28 (presumably principal components) and Amount.
+-The model achieves accuracy metrics and provides insights into its performance through visualizations such as boxplots and heatmaps. 
+-The Logistic Regression algorithm is used for its simplicity and effectiveness in binary classification tasks. 
+
+**Accuracy of model
+**Training Data:**
+- **Accuracy:** 95.35%
+- **Confusion Matrix:**
+  - True Positives (TP): 320
+  - True Negatives (TN): 336
+  - False Positives (FP): 8
+  - False Negatives (FN): 24
+- **Classification Report:**
+  - Precision (fraud): 0.98
+  - Recall (fraud): 0.93
+  - F1-score (fraud): 0.95
+  - Precision (non-fraud): 0.93
+  - Recall (non-fraud): 0.98
+  - F1-score (non-fraud): 0.95
+  - Accuracy: 95.35%
+
+**Testing Data:**
+- **Accuracy:** 93.58%
+- **Confusion Matrix:**
+  - True Positives (TP): 138
+  - True Negatives (TN): 139
+  - False Positives (FP): 9
+  - False Negatives (FN): 10
+- **Classification Report:**
+  - Precision (fraud): 0.94
+  - Recall (fraud): 0.93
+  - F1-score (fraud): 0.94
+  - Precision (non-fraud): 0.93
+  - Recall (non-fraud): 0.94
+  - F1-score (non-fraud): 0.94
+  - Accuracy: 93.58%
+
+These metrics provide a comprehensive overview of the model's performance on both the training and testing datasets.
+The dataset is preprocessed by handling outliers, balancing classes, and standardizing features to enhance the model's performance.
